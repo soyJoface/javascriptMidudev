@@ -29,3 +29,44 @@ console.log( allNumbers );
 
 const allNumbersSpread = [...numbers, ...numbers2];
 console.log( allNumbersSpread );
+
+
+
+// Recorrer arrays:
+
+// 1. While
+console.log('Recorriendo Arrays con While');
+let i = 0;
+
+while( i < frutas.length ) {
+    console.log( frutas[i] )
+    i++;
+}
+
+console.log('Recorriendo Arrays con For');
+// 2. For
+for( let i = 0; i < frutas.length; i++ ) {
+    console.log(frutas[i])
+}
+
+
+console.log('Recorriendo Arrays for of');
+//3. For of
+for (fruta of frutas) {
+    console.log(fruta)
+}
+
+console.log('Recorriendo Arrays con forEach()')
+// 4. For Each()
+
+frutas.forEach(function (fruta, index, originalArray) {
+  console.log(fruta) // imprime el elemento en la posición i
+})
+
+// Usando una arrow function e indicando sólo los parámetros que necesitamos de nuestra función podemos simplificarlo aún más:
+console.log('Recorriendo Arrays con forEach() con Arrow function')
+frutas.forEach((fruta) => {
+  console.log(fruta) // imprime el elemento en la posición i
+})
+
+
