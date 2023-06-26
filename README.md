@@ -1,3 +1,3 @@
-# Curso JavaScript con Miduded
+# Curso JavaScript con Midudev
 
 Espacio para aprender JavaScript.
